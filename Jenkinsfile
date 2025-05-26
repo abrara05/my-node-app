@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "yourdockerhubusername/my-node-app"
+        IMAGE_NAME = "abrara05/my-node-app"
         TAG = "latest"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/yourusername/my-node-app.git'
+                git 'https://github.com/abrara05/my-node-app.git'
             }
         }
 
